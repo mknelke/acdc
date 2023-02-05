@@ -63,6 +63,6 @@ double PID::Calc(double e, double dt)
 
     // START TASK 3 CODE HERE
     // use helping comments from Wiki
-    return 0.0;
+    return e*Kp_ + i_val_*Ki_ + d_val*Kd_;
     // END TASK 3 CODE HERE
 }
