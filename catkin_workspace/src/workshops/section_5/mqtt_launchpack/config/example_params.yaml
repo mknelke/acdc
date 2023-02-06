@@ -1,10 +1,11 @@
-broker:
+broker: broker.hivemq.com
   host: localhost
   port: 1883
 bridge:
-  ros2mqtt:
-    - ros_topic: /ping
-      mqtt_topic: pingpong
   mqtt2ros:
-    - mqtt_topic: pingpong
-      ros_topic: /pong
+    - mqtt_topic: ika_acdc_22/objectList_a
+      ros_topic: /topicA
+    - mqtt_topic: ika_acdc_22/objectList_b
+      ros_topic: /topicB
+    - mqtt_topic: ika_acdc_22/objectList_gt
+      ros_topic: /topicGT
