@@ -130,9 +130,71 @@ visualization_msgs::Marker ETSIViz::SG2Sphere(const geometry_msgs::Point pt, con
     // Set marker color depending on signal group state
     // The signal group state is given by the function variable "state"
     // hint: you can use an if (or switch) condition
-    marker.color.r = 0.0; // Task
-    marker.color.g = 0.0; // Task
-    marker.color.b = 0.0; // Task
+    switch(state) {
+        case 0:
+            marker.color.r = 0.1; // Task
+            marker.color.g = 0.1; // Task
+            marker.color.b = 0.1; // Task
+            break;
+        
+        case 1:
+            marker.color.r = 0.1;
+            marker.color.g = 0.1;
+            marker.color.b = 0.1;
+            break;
+        
+        case 2:
+            marker.color.r = 1.0;
+            marker.color.g = 0.0;
+            marker.color.b = 0.0;
+            break;
+        case 3:        
+            marker.color.r = 1.0;
+            marker.color.g = 0.0;
+            marker.color.b = 0.0;
+            break;
+    
+        case 4:
+            marker.color.r = 1.0;
+            marker.color.g = 1.0;
+            marker.color.b = 0.0;
+            break;
+
+        case 5:
+            marker.color.r = 0.0;
+            marker.color.g = 1.0;
+            marker.color.b = 0.0;
+            break;
+
+        case 6:
+            marker.color.r = 0.0;
+            marker.color.g = 1.0;
+            marker.color.b = 0.0;
+            break;
+
+        case 7:
+            marker.color.r = 1.0;
+            marker.color.g = 1.0;
+            marker.color.b = 0.0;
+            break;
+
+        case 8:
+            marker.color.r = 1.0;
+            marker.color.g = 1.0;
+            marker.color.b = 0.0;
+            break;
+
+        case 9:
+            marker.color.r = 1.0;
+            marker.color.g = 1.0;
+            marker.color.b = 0.0;
+            break;
+
+        default:
+            marker.color.r = 0.1;
+            marker.color.g = 0.1;
+            marker.color.b = 0.1;
+            break;
     // ### END CODE HERE ###
 
 
