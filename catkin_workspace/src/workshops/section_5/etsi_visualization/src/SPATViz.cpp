@@ -56,8 +56,8 @@ void ETSIViz::SPATCallback(const definitions::v2x_SPAT& msg) {
 
             // ### START CODE HERE ###
             sg.current_state = spat_intsctn.states[m].state_time_speed[0].eventState; // Get first element of state_time_speed
-            sg.sg_id = 0; // Task
-            sg.next_change = 0; // Task
+            sg.sg_id = spat_intsctn.states[m].signalGroup; // Task
+            sg.next_change = spat_intsctn.states[m].state_time_speed[0].timing_likelyTime; // Task
             // ### END CODE HERE ###
 
             spatviz.sgs.push_back(sg);
