@@ -7,5 +7,4 @@ bridge:
       ros_topic: /topicA
     - mqtt_topic: ika_acdc_22/objectList_b
       ros_topic: /topicB
-    - mqtt_topic: ika_acdc_22/objectList_gt
-      ros_topic: /topicGT
+    
